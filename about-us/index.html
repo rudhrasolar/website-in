@@ -28,6 +28,11 @@
       --ease:    cubic-bezier(0.16, 1, 0.3, 1);
     }
 
+    /* GLOBAL BOX SIZING RESET (FIXES IMAGE CUTOFF ISSUES) */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif; 
@@ -113,20 +118,19 @@
     .about-intro p { font-size: 1.05rem; color: var(--muted); line-height: 1.8; margin-bottom: 20px; }
 
     /* =========================================
-       5. GLOBAL LEADER STATS (HOME PAGE MATCHED + FIXED GAP)
+       5. GLOBAL LEADER STATS
     ========================================= */
     .global-section {
       background: var(--light); padding: 50px 6% 100px;
       border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
     }
     
-    /* Fixed Spacing Grid: Perfect for 5 items, centered, no weird gaps */
     .stats-grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 60px 30px; /* Fixed vertical gap */
-      padding-top: 40px; /* Space to not cut off top circles */
+      gap: 60px 30px;
+      padding-top: 40px; 
       max-width: 1140px;
       margin: 0 auto;
     }
@@ -138,7 +142,7 @@
       background: var(--white);
       border: 1px solid var(--border);
       border-radius: 12px;
-      padding: 50px 30px 30px; /* Increased top padding */
+      padding: 50px 30px 30px;
       text-align: center;
       box-shadow: 0 4px 15px rgba(0,0,0,0.02);
       transition: transform 0.3s, box-shadow 0.3s;
@@ -181,7 +185,7 @@
     .vision-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
     
     .vision-card--vision { background: var(--white); box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
-    .vision-card--mission { background: var(--darker); border: none; } /* Theme matched dark card */
+    .vision-card--mission { background: var(--darker); border: none; }
     
     .vision-card::after {
       content: ''; position: absolute; bottom: -80px; right: -80px;
@@ -215,7 +219,7 @@
     ========================================= */
     .quality-section {
       background: var(--light); padding: 50px 6%; text-align: center;
-      border-top: 1px solid var(--border);
+      border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
     }
     .cert-grid {
       display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;
@@ -239,7 +243,75 @@
     .cert-desc { font-size: 0.9rem; color: var(--muted); text-align: center; line-height: 1.5; margin: 0; font-weight: 500;}
 
     /* =========================================
-       8. RESPONSIVE
+       8. TEAM LEADERSHIP SECTION (FIXED)
+    ========================================= */
+    .team-section {
+      padding: 80px 6%;
+      background: var(--white);
+    }
+    .team-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 60px 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .team-card {
+      flex: 1 1 250px;
+      max-width: 280px;
+      text-align: center;
+    }
+    
+    .team-img-wrapper {
+      position: relative;
+      width: 190px; height: 190px;
+      margin: 0 auto 25px;
+      z-index: 1;
+      display: flex; /* Helps ensure perfect bounding box */
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+    
+    /* The Crescent Gradient Arc Effect */
+    .team-img-wrapper::before {
+      content: '';
+      position: absolute;
+      top: -4px; left: -14px; bottom: 8px; right: 8px;
+      border-radius: 50%;
+      background-image: linear-gradient(39deg, #f39129, #afcb22);
+      z-index: -1;
+      transition: transform 0.5s var(--ease);
+    }
+    
+    .team-card:hover .team-img-wrapper::before {
+      transform: scale(1.08) rotate(15deg);
+    }
+    
+    .team-img {
+      display: block; /* Removes descender gaps */
+      width: 100%; height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      /* Thick border matching section background forms the inner cutoff for the crescent */
+      border: 8px solid var(--white); 
+      position: relative;
+      z-index: 2;
+      object-position: top;
+    }
+    
+    .team-name {
+      font-size: 1.35rem; font-weight: 800; color: var(--dark);
+      text-transform: capitalize; margin-bottom: 6px; letter-spacing: -0.5px;
+    }
+    .team-role {
+      font-size: 0.95rem; color: var(--text); font-weight: 500;
+      margin: 0;
+    }
+
+    /* =========================================
+       9. RESPONSIVE
     ========================================= */
     @media(max-width:992px) {
       .vision-grid { grid-template-columns: 1fr; }
@@ -249,6 +321,7 @@
       .stat-card { max-width: 100%; }
       .page-banner { height: 300px; }
       .cert-badge { padding: 30px 20px; }
+      .team-grid { gap: 50px 20px; }
     }
   </style>
 </head>
@@ -423,6 +496,74 @@
         <div class="cert-name">CE Certified</div>
         <p class="cert-desc">European Conformity Standard</p>
       </div>
+    </div>
+  </section>
+
+  <section class="team-section">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Leadership</span>
+      <h2>Meet Our <span>Experts</span></h2>
+      <p>The driving force behind Rudhra Solar Greentech's operational excellence and strategic vision.</p>
+    </div>
+
+    <div class="team-grid">
+      
+      <div class="team-card reveal">
+        <div class="team-img-wrapper">
+          <img src="/images/team_images/Bhom Singh Jhala .jpg" alt="Bhom Singh Jhala" class="team-img">
+        </div>
+        <h3 class="team-name">Bhom Singh Jhala</h3>
+        <p class="team-role">Managing Director</p>
+      </div>
+
+      <div class="team-card reveal d1">
+        <div class="team-img-wrapper">
+          <img src="/images/team_images/Prem singh jhala .jpg" alt="Prem Singh Jhala" class="team-img">
+        </div>
+        <h3 class="team-name">Prem Singh Jhala</h3>
+        <p class="team-role">O&amp;M President</p>
+      </div>
+
+      <div class="team-card reveal d2">
+        <div class="team-img-wrapper">
+          <img src="/images/team_images/Gopal Singh Jhala.jpg" alt="Gopal Singh Jhala" class="team-img">
+        </div>
+        <h3 class="team-name">Gopal Singh Jhala</h3>
+        <p class="team-role">O&amp;M Administrative</p>
+      </div>
+
+      <div class="team-card reveal d3">
+        <div class="team-img-wrapper">
+          <img src="/images/team_images/Vikram Singh Rathore .jpg" alt="Vikram Singh Rathore" class="team-img">
+        </div>
+        <h3 class="team-name">Vikram Singh Rathore</h3>
+        <p class="team-role">Head of O&amp;M</p>
+      </div>
+
+      <div class="team-card reveal">
+        <div class="team-img-wrapper">
+          <img src="/images/team_images/Monika Choudhary .jpg" alt="Monika Choudhary" class="team-img">
+        </div>
+        <h3 class="team-name">Monika Choudhary</h3>
+        <p class="team-role">O&amp;M Manager</p>
+      </div>
+
+      <div class="team-card reveal d2">
+        <div class="team-img-wrapper">
+          <img src="/images/team_images/Amarjeet Singh .jpg" alt="Amarjeet Singh" class="team-img">
+        </div>
+        <h3 class="team-name">Amarjeet Singh</h3>
+        <p class="team-role">Senior Accountant</p>
+      </div>
+
+      <div class="team-card reveal d1">
+        <div class="team-img-wrapper">
+          <img src="/images/team_images/Kush Malviya .jpg" alt="Kush Malviya" class="team-img">
+        </div>
+        <h3 class="team-name">Kush Malviya</h3>
+        <p class="team-role">Junior Accountant</p>
+      </div>
+
     </div>
   </section>
 

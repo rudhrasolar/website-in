@@ -35,7 +35,7 @@
             <div class="contact-info-list">
               <div class="info-item">
                 <i class="fas fa-map-marker-alt"></i>
-                <p>241, HANWANT B'BJS GALI.14<br>NEAR MERI UDAN SCHOOL,<br>BJS COLONY JODHPUR-342006</p>
+                <p>241, Hanwant B'BJS Gali.14<br>Near Meri Udan School,<br>BJS Colony Jodhpur-342006</p>
               </div>
               <div class="info-item">
                 <i class="far fa-clock"></i>

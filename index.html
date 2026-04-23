@@ -199,10 +199,13 @@
     ========================================= */
     .about-section {
       position: relative; padding: 40px 6%; text-align: center;
-      background: linear-gradient(rgba(248, 250, 252, 0.88), rgba(248, 250, 252, 0.96)), url('/images/about-us-home-bg.jpg') center/cover fixed;
+      background: linear-gradient(rgb(0 0 0 / 60%), rgb(0 0 0 / 60%)), url('/images/about-us-home-bg.jpg') center/cover fixed;
     }
     .about-inner { max-width: 840px; margin: 0 auto; position: relative; z-index: 2; }
     .about-action { margin-top: 42px; }
+    .about-inner h2, .about-inner p {color: var(--white);}
+    .about-action .btn-pill{border-color: var(--white);color: var(--white);}
+    .about-action .btn-pill:hover{background: var(--white); color: var(--dark);}
 
     /* =========================================
        7. TECHNOLOGY
@@ -223,6 +226,13 @@
     }
     .tech-svg { width: 32px; height: 32px; }
     .tech-item h3 { font-size: 1.05rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.3px; color: var(--dark); margin: 0; }
+    .tech-item h3:before{content: '';background: url(/images/background-tech.svg); width: 50px;
+    height: 50px;
+    position: absolute;
+    background-size: contain;
+    top: -17px;
+    left: -30px;
+    background-repeat: no-repeat;}
     .tech-item p { font-size: 0.95rem; color: var(--muted); line-height: 1.7; }
     .tech-action { text-align: center; margin-top: 50px; }
 
@@ -255,7 +265,7 @@
     .eco-inner {
       position: relative;
       z-index: 2; /* Keeps content above the green background */
-      max-width: 1140px;
+      max-width: 1040px;
       margin: 0 auto;
     }
 
@@ -484,6 +494,8 @@
       .hero { height: 90vh; }
       .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 50px 30px; }
       .tech-grid { grid-template-columns: 1fr; }
+      .tech-item{ padding: 0 15px;}
+      .tech-item h3:before{left: -15px;}
       .sustain-inner { grid-template-columns: 1fr; }
       .projects-grid { grid-template-columns: repeat(2, 1fr); }
       .news-grid { grid-template-columns: repeat(2, 1fr); }
@@ -630,13 +642,6 @@
       <div class="tech-grid">
         <div class="tech-item reveal d1">
           <div class="tech-item-header">
-            <div class="tech-icon-box">
-              <svg class="tech-svg" viewBox="0 0 48 48" fill="none">
-                 <path d="M16 12H12V16M32 12H36V16M12 32V36H16M36 32V36H32" stroke="var(--dark)" stroke-width="2" stroke-linecap="round"/>
-                 <circle cx="24" cy="24" r="3" fill="var(--green)"/>
-                 <circle cx="24" cy="24" r="10" stroke="var(--orange)" stroke-width="1.5" stroke-dasharray="2 4"/>
-              </svg>
-            </div>
             <h3>Solar Operations and Management</h3>
           </div>
           <p>For top-notch Solar O&M in India, trust Rudra. We offer comprehensive services like PV module washing, MMS maintenance, and thermography to maximize plant performance and availability. </p>
@@ -644,15 +649,6 @@
 
         <div class="tech-item reveal d2">
           <div class="tech-item-header">
-            <div class="tech-icon-box">
-              <svg class="tech-svg" viewBox="0 0 48 48" fill="none">
-                 <path d="M16 28L24 16L32 24" stroke="var(--dark)" stroke-width="1.5" stroke-linejoin="round"/>
-                 <circle cx="16" cy="28" r="4" fill="var(--green)"/>
-                 <circle cx="24" cy="16" r="4" fill="var(--orange)"/>
-                 <circle cx="32" cy="24" r="4" fill="var(--dark)"/>
-                 <path d="M12 24C12 30.6274 17.3726 36 24 36C30.6274 36 36 30.6274 36 24" stroke="var(--border)" stroke-width="1.5" stroke-dasharray="3 3"/>
-              </svg>
-            </div>
             <h3>E-Waste Management</h3>
           </div>
           <p>Looking for a reliable E-Waste Management Company in India? Energy offers sustainable recycling services for MNCs, SMEs, communities, and individuals. Ensure responsible e-waste disposal with us!</p>
@@ -660,13 +656,6 @@
 
         <div class="tech-item reveal d3">
           <div class="tech-item-header">
-            <div class="tech-icon-box">
-              <svg class="tech-svg" viewBox="0 0 48 48" fill="none">
-                 <path d="M24 12L36 18L24 24L12 18L24 12Z" stroke="var(--orange)" stroke-width="1.5" fill="rgba(244,139,41,0.1)"/>
-                 <path d="M12 26L24 32L36 26" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                 <path d="M12 34L24 40L36 34" stroke="var(--dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
             <h3>Inspection and Testing</h3>
           </div>
           <p>Our SPV system services include design, installation, warranty documents, wiring diagrams, PV string info, earthing, AC system data, mechanical design, O&M data, test results, and commissioning</p>
@@ -674,13 +663,6 @@
 
         <div class="tech-item reveal d4">
           <div class="tech-item-header">
-            <div class="tech-icon-box">
-              <svg class="tech-svg" viewBox="0 0 48 48" fill="none">
-                 <line x1="10" y1="24" x2="38" y2="24" stroke="var(--border)" stroke-width="1.5" stroke-dasharray="2 2"/>
-                 <path d="M10 24C14 24 16 14 20 14C24 14 24 34 28 34C32 34 34 24 38 24" stroke="var(--green)" stroke-width="2.5" stroke-linecap="round"/>
-                 <circle cx="38" cy="24" r="3" fill="var(--orange)"/>
-              </svg>
-            </div>
             <h3>Man Power Supply</h3>
           </div>
           <p>Highly Skilled (BE (Electrical) With Solar O&M Experience 4-5 Years & Electrical Supervisor License Holder) Skilled (Degree/Diploma with 2-3 Years of O&M Field) Semi-Skilled (ITI / Diploma Fresher/ Under Training/less than 1 Year Experience) Unskilled Manpower (Office Boy, Helper, Module cleaning Labour, House Keeping)</p>
@@ -704,7 +686,7 @@
       
       <div class="eco-grid">
         <div class="eco-card side reveal d1">
-          <img src="/images/our-project-home-image-3.jpg" alt="Bikaner">
+          <img src="/images/our-project-home-image-2.jpg" alt="Bikaner">
           <div class="eco-label">
             <h3>Bikaner</h3>
           </div>
@@ -712,7 +694,7 @@
 
         <div class="eco-card center reveal d2">
           <div class="eco-ribbon">New Product</div>
-          <img src="/images/our-project-home-image-2.jpg" alt="Jaisalmer">
+          <img src="/images/our-project-home-image-3.jpg " alt="Jaisalmer">
           <div class="eco-label">
             <h3>Jaisalmer</h3>
           </div>
