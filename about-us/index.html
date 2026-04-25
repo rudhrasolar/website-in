@@ -227,15 +227,18 @@
     }
     .cert-badge {
       background: var(--white); border: 1px solid var(--border); border-radius: 12px;
-      padding: 40px 30px; flex: 1 1 200px; max-width: 260px;
-      display: flex; flex-direction: column; align-items: center; gap: 15px;
+      padding: 20px 00px; flex: 1 1 200px; max-width: 330px;
+      display: flex; flex-direction: column; align-items: center;
       box-shadow: 0 4px 15px rgba(0,0,0,0.02); transition: all 0.3s;
     }
     .cert-badge:hover { border-color: rgba(74,158,56,0.3); box-shadow: 0 15px 30px rgba(0,0,0,0.06); transform: translateY(-8px); }
     
     .cert-icon {
-      font-size: 3.5rem; color: var(--green); margin-bottom: 10px;
+      max-width: 80%; margin-bottom: 10px;
       transition: transform 0.3s;
+    }
+    .cert-icon img{
+      width: 100%;height: auto;
     }
     .cert-badge:hover .cert-icon { transform: scale(1.1); color: var(--orange); }
 
@@ -474,27 +477,27 @@
     
     <div class="cert-grid">
       <div class="cert-badge reveal d1">
-        <div class="cert-icon"><i class="fas fa-award"></i></div>
+        <div class="cert-icon">
+          <img src="/images/certifications/90011.png" alt="ISO 9001" class="">
+        </div>
         <div class="cert-name">ISO 9001</div>
         <p class="cert-desc">Quality Management System</p>
       </div>
       
       <div class="cert-badge reveal d2">
-        <div class="cert-icon"><i class="fas fa-leaf"></i></div>
+        <div class="cert-icon">
+          <img src="/images/certifications/14001.png" alt="ISO 14001" class="">          
+        </div>
         <div class="cert-name">ISO 14001</div>
         <p class="cert-desc">Environmental Management</p>
       </div>
       
       <div class="cert-badge reveal d3">
-        <div class="cert-icon"><i class="fas fa-hard-hat"></i></div>
+        <div class="cert-icon">
+          <img src="/images/certifications/450011.png" alt="ISO 45001" class=""> 
+        </div>
         <div class="cert-name">ISO 45001</div>
         <p class="cert-desc">Occupational Health &amp; Safety</p>
-      </div>
-      
-      <div class="cert-badge reveal d4">
-        <div class="cert-icon"><i class="fas fa-certificate"></i></div>
-        <div class="cert-name">CE Certified</div>
-        <p class="cert-desc">European Conformity Standard</p>
       </div>
     </div>
   </section>
