@@ -57,20 +57,20 @@
               <div class="dept-block">
                 <h6>Sales & Marketing:</h6>
                 <a href="tel:+919509224116"><i class="fas fa-phone-alt"></i> +91 95092 24116</a>
-                <a href="mailto:Premsinghjhala@Rudramanagements.com"><i class="fas fa-envelope"></i> Premsinghjhala@Rudramanagements.com</a>
+                <a href="mailto:Premsinghjhala@Rudhramanagements.com"><i class="fas fa-envelope"></i> Premsinghjhala@Rudramanagements.com</a>
               </div>
 
               <div class="dept-block">
                 <h6>Procurement:</h6>
                 <a href="tel:+919828344455"><i class="fas fa-phone-alt"></i> +91 98283 44455</a>
                 <a href="mailto:Giriraj1rathod@yahoo.com"><i class="fas fa-envelope"></i> Giriraj1rathod@yahoo.com</a>
-                <a href="mailto:vikram.rathore@Rudramanagements.com"><i class="fas fa-envelope"></i> vikram.rathore@Rudramanagements.com</a>
+                <a href="mailto:vikram.rathore@Rudhramanagements.com"><i class="fas fa-envelope"></i> vikram.rathore@Rudramanagements.com</a>
               </div>
 
               <div class="dept-block">
                 <h6>HR & Recruitment:</h6>
                 <a href="tel:+919116729736"><i class="fas fa-phone-alt"></i> +91 91167 29736</a>
-                <a href="mailto:hr@Rudramanagements.com"><i class="fas fa-envelope"></i> hr@Rudramanagements.com</a>
+                <a href="mailto:hr@Rudhramanagements.com"><i class="fas fa-envelope"></i> hr@Rudramanagements.com</a>
               </div>
 
             </div>
