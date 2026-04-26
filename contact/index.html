@@ -171,16 +171,14 @@
         <div class="contact-card reveal stagger-1">
           <h3>Get A Free Quote</h3>
           <p>After we get some information from you, we'll set up a time to discuss your project in further detail.</p>
-          
-          <form class="contact-form">
-            <input type="text" placeholder="Name" required>
+          <form class="contact-form g-sheet-form">
+            <input type="text" name="name" placeholder="Name" required>
             <div class="form-row">
-              <input type="tel" placeholder="Phone" required>
-              <input type="email" placeholder="Email" required>
+              <input type="tel" name="phone" placeholder="Phone" required>
+              <input type="email" name="email" placeholder="Email" required>
             </div>
-            <input type="text" placeholder="Subject">
-            <textarea placeholder="Message" required></textarea>
-
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea name="message" placeholder="Message" required></textarea>
             <button type="submit" class="btn-primary">SUBMIT</button>
           </form>
         </div>
