@@ -35,7 +35,7 @@
         </nav>
 
         <div class="header-right">
-          <a href="index.html#contact" class="btn-contact">Get a Quote</a>
+          <a href="/contact" class="btn-contact">Get a Quote</a>
         </div>
 
         <div class="hamburger" id="hamburger">
