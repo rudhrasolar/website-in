@@ -42,7 +42,7 @@
                 <p>Mon to Sat : 9:30AM to 6:30PM<br>Sun : Closed</p>
               </div>
               <div class="socials">
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/rudra_managements" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                 <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
               </div>
             </div>
