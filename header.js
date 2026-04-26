@@ -1,5 +1,5 @@
 // ============================================================
-//  Rudhra — Shared Header
+//  Rudra — Shared Header
 //  Include this script in every page:
 //  <script src="header.js"></script>
 //  Add <style src="shared.css"></style> for shared styles.
@@ -19,7 +19,7 @@
       <div class="header-container">
 
         <a href="/" class="logo">
-          <img src="/images/logo.png" alt="Rudhra"
+          <img src="/images/logo.png" alt="Rudra"
                onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
           <span class="logo-wordmark" style="display:none;">RUD<span>RA</span></span>
         </a>

@@ -1,5 +1,5 @@
 // ============================================================
-//  Rudhra — Premium Shared Footer
+//  Rudra — Premium Shared Footer
 //  Include this script in every page:
 //  <script src="/footer.js"></script>
 // ============================================================
@@ -11,7 +11,7 @@
 
         <div class="footer-col brand-col">
           <a href="index.html" class="footer-logo-link">
-            <img src="/images/logo.png" alt="Rudhra Logo" style="max-width: 180px; margin-bottom: 10px;"> 
+            <img src="/images/logo.png" alt="Rudra Logo" style="max-width: 180px; margin-bottom: 10px;"> 
           </a>
           <p class="brand-desc">We started as aspiring entrepreneurs committed to achieving excellence in our services and ensuring the satisfaction of our clients. Perseverance and consistency have led us to our present: providing services to leading companies and maintaining solar plants.</p>
         </div>
@@ -57,20 +57,20 @@
               <div class="dept-block">
                 <h6>Sales & Marketing:</h6>
                 <a href="tel:+919509224116"><i class="fas fa-phone-alt"></i> +91 95092 24116</a>
-                <a href="mailto:Premsinghjhala@Rudhramanagements.com"><i class="fas fa-envelope"></i> Premsinghjhala@Rudhramanagements.com</a>
+                <a href="mailto:Premsinghjhala@Rudramanagements.com"><i class="fas fa-envelope"></i> Premsinghjhala@Rudramanagements.com</a>
               </div>
 
               <div class="dept-block">
                 <h6>Procurement:</h6>
                 <a href="tel:+919828344455"><i class="fas fa-phone-alt"></i> +91 98283 44455</a>
                 <a href="mailto:Giriraj1rathod@yahoo.com"><i class="fas fa-envelope"></i> Giriraj1rathod@yahoo.com</a>
-                <a href="mailto:vikram.rathore@Rudhramanagements.com"><i class="fas fa-envelope"></i> vikram.rathore@Rudhramanagements.com</a>
+                <a href="mailto:vikram.rathore@Rudramanagements.com"><i class="fas fa-envelope"></i> vikram.rathore@Rudramanagements.com</a>
               </div>
 
               <div class="dept-block">
                 <h6>HR & Recruitment:</h6>
                 <a href="tel:+919116729736"><i class="fas fa-phone-alt"></i> +91 91167 29736</a>
-                <a href="mailto:hr@Rudhramanagements.com"><i class="fas fa-envelope"></i> hr@Rudhramanagements.com</a>
+                <a href="mailto:hr@Rudramanagements.com"><i class="fas fa-envelope"></i> hr@Rudramanagements.com</a>
               </div>
 
             </div>
@@ -80,7 +80,7 @@
       </div>
 
       <div class="footer-bottom-bar">
-        <p>Copyright © ${new Date().getFullYear()} <span class="text-orange">Rudhra Managements</span>. All rights reserved. Designed By <span class="text-orange">Vyukta</span>.</p>
+        <p>Copyright © ${new Date().getFullYear()} <span class="text-orange">Rudra Managements</span>. All rights reserved. Designed By <span class="text-orange">Vyukta</span>.</p>
         <button id="backToTop" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
       </div>
     </footer>
