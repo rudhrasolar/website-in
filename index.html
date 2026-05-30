@@ -398,10 +398,111 @@
     /* =========================================
        10. SUSTAINABILITY 
     ========================================= */
-    .sustain-section { padding: 40px 6%; background: var(--white); }
-    .sustain-inner { max-width: 1040px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: center; }
-    .sustain-img-wrap { position: relative; border-radius: 8px; overflow: hidden;height: 100%; }
-    .sustain-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
+    .sustain-section {
+      padding: 0;
+      background: var(--white);
+      overflow: hidden;
+    }
+    .sustain-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 480px;
+      position: relative;
+    }
+    
+    .sustain-img-side {
+      position: relative;
+      overflow: hidden;
+    }
+    .sustain-img-side img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    
+    .sustain-dark-side {
+      background: #0f172a;
+      display: flex;
+      align-items: center;
+      padding: 60px 56px 60px 80px;
+      position: relative;
+    }
+    
+    .sustain-sdg-badge {
+      position: absolute;
+      left: -56px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 112px;
+      height: 112px;
+      border-radius: 50%;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+      z-index: 10;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .sustain-sdg-badge img {
+      width: 86px;
+      height: 86px;
+      object-fit: contain;
+    }
+    
+    .sustain-text-block .eyebrow {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--orange);
+      margin-bottom: 14px;
+    }
+    .sustain-text-block h2 {
+      font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: -0.5px;
+      color: #fff;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+    .sustain-text-block p {
+      font-size: 0.97rem;
+      color: rgba(255,255,255,0.72);
+      line-height: 1.75;
+      font-weight: 400;
+      max-width: 440px;
+    }
+    
+    @media (max-width: 900px) {
+      .sustain-inner {
+        grid-template-columns: 1fr;
+        min-height: unset;
+      }
+      .sustain-img-side {
+        height: 300px;
+      }
+      .sustain-dark-side {
+        padding: 70px 32px 50px 32px;
+      }
+      .sustain-sdg-badge {
+        left: 50%;
+        top: -56px;
+        transform: translateX(-50%);
+      }
+    }
+    @media (max-width: 640px) {
+      .sustain-dark-side {
+        padding: 70px 24px 44px 24px;
+      }
+      .sustain-text-block h2 {
+        font-size: 1.5rem;
+      }
+    }
 
     /* =========================================
        11. CLIENTS & SELECTED PROJECTS & NEWS
@@ -719,20 +820,34 @@
     </div>
   </section>
 
-  <section class="sustain-section">
-    <div class="sustain-inner">
-      <div class="sustain-img-wrap reveal">
-        <img src="/images/Sustainability.jpg" alt="Sustainability">
-      </div>
-      <div class="sustain-text reveal d2">
-        <div class="section-head" style="margin-bottom: 0;">
-          <span class="eyebrow">Our Commitment</span>
-          <h2>Sustainability &amp; ESG</h2>
-          <p>In accordance with the Sustainable Development Goals framework, Rudra Managements monitors sustainability metrics to ensure progress across our global operations. We are committed to reducing the carbon footprint of solar maintenance and accelerating the world's transition to clean energy.</p>
-        </div>
-      </div>
+<section class="sustain-section">
+  <div class="sustain-inner">
+ 
+    <!-- LEFT: Nature Photo -->
+    <div class="sustain-img-side reveal">
+      <img src="/images/Sustainability-image.png" alt="Sustainability — people planting seedlings">
     </div>
-  </section>
+ 
+    <!-- RIGHT: Dark Panel -->
+    <div class="sustain-dark-side reveal d2">
+ 
+      <!-- SDG Badge overlapping the split -->
+      <div class="sustain-sdg-badge">
+        <img src="/images/globe-content.png"
+             alt="UN Sustainable Development Goals"
+             onerror="this.style.display='none'">
+      </div>
+ 
+      <!-- Text -->
+      <div class="sustain-text-block">
+        <span class="eyebrow">Our Commitment</span>
+        <h2>Sustainability &amp; ESG</h2>
+        <p>In accordance with the Sustainable Development Goals framework, Rudra Managements monitors sustainability metrics to ensure progress across our global operations. We are committed to reducing the carbon footprint of solar maintenance and accelerating the world's transition to clean energy.</p>
+      </div>
+ 
+    </div>
+  </div>
+</section>
 
   <section class="clients-section">
     <div class="clients-inner">
