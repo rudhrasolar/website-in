@@ -11,7 +11,7 @@
 
         <div class="footer-col brand-col">
           <a href="index.html" class="footer-logo-link">
-            <img src="/images/logo.png" alt="Rudra Logo" style="max-width: 180px; margin-bottom: 10px;"> 
+            <img src="/images/rudra-logo.png" alt="Rudra Logo" style="max-width: 180px; margin-bottom: 10px;"> 
           </a>
           <p class="brand-desc">We started as aspiring entrepreneurs committed to achieving excellence in our services and ensuring the satisfaction of our clients. Perseverance and consistency have led us to our present: providing services to leading companies and maintaining solar plants.</p>
         </div>
