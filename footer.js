@@ -79,7 +79,7 @@
       </div>
 
       <div class="footer-bottom-bar">
-        <p>Copyright © ${new Date().getFullYear()} <span class="text-orange">Rudra Managements</span>. All rights reserved. Designed By <span class="text-orange"><a class="text-orange" href="http://vvkdev.in/" target="_blank">Vyukta</a></span>.</p>
+        <p>Copyright © ${new Date().getFullYear()} <span class="text-orange">Rudra Managements</span>. All rights reserved. Designed By <span class="text-orange"><a class="text-orange" href="http://vvkdev.in/" target="_blank">vvkdev</a></span>.</p>
         <button id="backToTop" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
       </div>
     </footer>
